@@ -7,6 +7,7 @@ import { Users } from './components/Users';
 import Create from './components/Create';
 import Update from './components/Update';
 
+
 function App() {
 
   const router = createBrowserRouter([
@@ -19,7 +20,7 @@ function App() {
       element: <Create />
     },
     {
-      path: "/edit",
+      path: "/edit/:id",
       element: <Update />,
     },
   ]);
